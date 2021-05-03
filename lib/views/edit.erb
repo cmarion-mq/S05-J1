@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Modifier un potin</title>
+  </head>
+  <body>
+    <h1>Modifier un potin !</h1>
+    <p>Modifie ton potin numéro <%= params['id'].to_i + 1 %> via le formulaire ci-dessous</p>
+    <form action='/gossips/<%=id%>/edit/' method='POST'>
+      Quel est ton nom :  <input type='text' name='gossip_author_update'/><br/>
+      Quelle modification veux tu enregistrer : <input type='text' name='gossip_content_update'/><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
